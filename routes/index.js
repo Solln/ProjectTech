@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/testPage1', function(req, res, next) {
-    res.render('testPage1');
+    res.render('testPage1', { title: "Darren's First Express App Hosted on an EB Instance" });
 });
 
 module.exports = router;
