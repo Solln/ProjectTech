@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: "Darren's First Express App Hosted on an EB Instance" });
 });
 
+router.get('/testPage1', function(req, res, next) {
+    res.render('testPage1');
+});
+
 module.exports = router;
