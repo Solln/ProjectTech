@@ -1,6 +1,13 @@
 extends layout
 
 block content
+
+    script document.getElementById("testpage1").classList.add("active");
+
+
     h1= title
+    a.foo_link(href='/') Back
     p This is the Test Page ayyyyy
-    img(src="public/images/karol.jpg" width="50%" height="50%")
+    img(src="public/images/karol.jpg" width="25%" height="25%")
+
+    // a.foo_link(href='/', target='_blank') Back   -- Opens in a new tab

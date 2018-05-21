@@ -4,4 +4,17 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    block nav
+
+      ul
+        li
+          a(href="./" id="index") Index
+          li
+            a(href="./Testpage1" id="testpage1") TestPage1
+            li
+              a(href="./Testpage2") TestPage2
+              li
+                a(href="./Testpage3") TestPage3
+
+    h1= welcome
     block content

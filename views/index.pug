@@ -1,5 +1,10 @@
 extends layout
 
 block content
+
+  script document.getElementById("index").classList.add("active");
+
   h1= title
   p Welcome to the index page
+
+  a.foo_link(href='/testPage1') TestPageLink
