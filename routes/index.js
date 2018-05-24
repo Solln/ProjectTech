@@ -3,11 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: "Darren's First Express App Hosted on an EB Instance" , welcome: "Welcome to the Index page"});
+  res.render('home', { title: "Home" , welcome: "Welcome to the Home page"});
 });
 
-router.get('/testPage1', function(req, res, next) {
-    res.render('testPage1', { title: "Darren's First Express App Hosted on an EB Instance", welcome: "Welcome to Test Page 1" });
+router.get('/aboutMe', function(req, res, next) {
+    res.render('aboutMe', { title: "About Me", welcome: "Welcome to About Me" });
+});
+
+router.get('/projectSuggestion', function(req, res, next) {
+    res.render('projectSuggestion', { title: "Project Suggestions", welcome: "Welcome to Project Suggestions" });
 });
 
 module.exports = router;
