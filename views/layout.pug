@@ -10,8 +10,7 @@ html
       script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js", integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ", crossorigin="anonymous")
       script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js", integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm", crossorigin="anonymous")
 
-
-  body(style="background-color:#F7F7F7;")
+  body
 
     block nav
       nav.navbar.navbar-expand-md.navbar-dark.bg-primary.fixed-top
@@ -25,15 +24,15 @@ html
             div.navbar-item.dropdown
               a.nav-link.dropdown-toggle(href="#", id="navbardrop", data-toggle="dropdown", aria-haspopup="true", aria-expended="false") Projects
               div.dropdown-menu(aria-labelledby="navbardrop")
-                a.dropdown-item(href="/") Text Projects
-                a.dropdown-item(href="/") Networking Projects
-                a.dropdown-item(href="/") Public Service Projects
-                a.dropdown-item(href="/") Threading Projects
-                a.dropdown-item(href="/") File Projects
-                a.dropdown-item(href="/") Web Projects
-                a.dropdown-item(href="/") Database Projects
-                a.dropdown-item(href="/") Multimedia Projects
-                a.dropdown-item(href="/") Game Projects
+                a.dropdown-item(href="/projectSel?cat=Text") Text Projects
+                a.dropdown-item(href="/projectSel?cat=Network") Networking Projects
+                a.dropdown-item(href="/projectSel?cat=Public Service") Public Service Projects
+                a.dropdown-item(href="/projectSel?cat=Threading") Threading Projects
+                a.dropdown-item(href="/projectSel?cat=File") File Projects
+                a.dropdown-item(href="/projectSel?cat=Web") Web Projects
+                a.dropdown-item(href="/projectSel?cat=Database") Database Projects
+                a.dropdown-item(href="/projectSel?cat=Multimedia") Multimedia Projects
+                a.dropdown-item(href="/projectSel?cat=Game") Game Projects
 
     div(style="padding-top: 20px")
       h1= title
